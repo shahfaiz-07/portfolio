@@ -1,5 +1,5 @@
 "use client"
-import { Pagination, PaginationItem, Tab, Tabs } from '@heroui/react'
+import { Pagination } from '@heroui/react'
 import edypros from "../../../public/edypros.png"
 import askanon from "../../../public/askanon.png"
 import cinematch from "../../../public/cinematch.png"
