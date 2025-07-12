@@ -42,8 +42,8 @@ This portfolio will be deployed on **Vercel**.
 
 ## 🧑‍💻 Author
 
-**Faizaan Hussain**  
-[GitHub](https://github.com/shahfaiz-07) • [LinkedIn](https://www.linkedin.com/in/faizaanhussain)
+**S Faizaan Hussain**  
+[GitHub](https://github.com/shahfaiz-07) • [LinkedIn](https://www.linkedin.com/in/s-faizaan-hussain-70b840248)
 
 ---
 
