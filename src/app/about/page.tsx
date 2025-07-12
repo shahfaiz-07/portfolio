@@ -12,14 +12,14 @@ import Skills from "../components/Skills";
 
 function EduCard({ h1, h2, body }: { h1: string, h2: string, body: string }) {
   return (
-    <Card className="max-w-sm bg-black border border-gray-700">
+    <Card className="max-w-sm border-none">
       <CardHeader className="">
         <div className="flex flex-col">
           <p className="text-md">{h1}</p>
           <p className="text-small text-default-500">{h2}</p>
         </div>
       </CardHeader>
-      <Divider className="bg-gray-700"/>
+      <Divider/>
       <CardBody>
         <p>{body}</p>
       </CardBody>

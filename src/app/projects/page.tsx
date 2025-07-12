@@ -87,18 +87,17 @@ const projects: Array<DisplayProps> = [
     techStack: ["java", "cpp"]
   },
 ]
-
 const Projects = () => {
   const [page, setPage] = useState<number>(1);
   return (
     <div className='flex w-full flex-col font-mono px-5 md:px-10 py-5'>
-      <Pagination initialPage={1} total={projects.length} isCompact showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden lg:block self-start bg-background' size="lg" showShadow siblings={3}/>
-      <Pagination initialPage={1} total={projects.length} isCompact showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden md:block lg:hidden self-start bg-background' size="md" siblings={3} showShadow/>
-      <Pagination initialPage={1} total={projects.length} isCompact showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer self-center md:hidden bg-background' size="sm" showShadow/>
+      <Pagination initialPage={1} total={projects.length} showControls loop  page={page} onChange={setPage} className='cursor-pointer hidden lg:block self-start' radius='full' size="lg" showShadow siblings={3}/>
+      <Pagination initialPage={1} total={projects.length} showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden md:block lg:hidden self-start' size="md" siblings={3} showShadow/>
+      <Pagination initialPage={1} total={projects.length} showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer self-center md:hidden' size="sm" showShadow variant='flat'/>
       <DisplayProject {...projects[page - 1]}/>
-      <Pagination initialPage={1} total={projects.length} isCompact showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden lg:block self-end shrink' size='lg' showShadow siblings={3}/>
-      <Pagination initialPage={1} total={projects.length} isCompact showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden md:block lg:hidden self-end' size="md" showShadow siblings={3}/>
-      <Pagination initialPage={1} total={projects.length} isCompact showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer self-center md:hidden' size="sm" showShadow/>
+      <Pagination initialPage={1} total={projects.length} showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden lg:block self-end shrink' size='lg' showShadow siblings={3}/>
+      <Pagination initialPage={1} total={projects.length} showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer hidden md:block lg:hidden self-end' size="md" showShadow siblings={3}/>
+      <Pagination initialPage={1} total={projects.length} showControls loop  radius='full' page={page} onChange={setPage} className='cursor-pointer self-center md:hidden' size="sm" showShadow/>
     </div>
   )
 }

@@ -54,7 +54,7 @@ export default function GFG() {
         fetchStats()
     }, [])
     return (
-        <Card className="max-w-[400px] text-foreground bg-background border border-success" isPressable onPress={() => window.open("https://www.geeksforgeeks.org/user/shahfaiz/", "_blank")}>
+        <Card className="max-w-[400px] text-foreground" isPressable onPress={() => window.open("https://www.geeksforgeeks.org/user/shahfaiz/", "_blank")}>
             <CardHeader className="flex gap-3 justify-between">
                 <div className="flex gap-5">
                     <Avatar
@@ -77,7 +77,7 @@ export default function GFG() {
                     width={40}
                 />
             </CardHeader>
-            <Divider className="bg-success"/>
+            <Divider/>
             <CardBody className="font-mono p-0">
                 {
                     loading ?
@@ -92,18 +92,18 @@ export default function GFG() {
                         <h4 className="text-[10px] md:text-xs text-gray-300 mt-1">Coding Score</h4>
                         <p className="text-sm md:text-base">{stat.total_score}</p>
                     </div>
-                    <Divider orientation="vertical" className="bg-success" />
+                    <Divider orientation="vertical" />
                     <div>
                         <h4 className="text-[10px] md:text-xs text-gray-300 mt-1">Problems Solved</h4>
                         <p className="text-sm md:text-base">{stat.total_problems_solved}</p>
                     </div>
-                    <Divider orientation="vertical" className="bg-success" />
+                    <Divider orientation="vertical" />
                     <div>
                         <h4 className="text-[10px] md:text-xs text-gray-300 mt-1">Monthly Score</h4>
                         <p className="text-sm md:text-base">{stat.monthly_score}</p>
                     </div>
                 </div>
-                <Divider className="bg-success"/>
+                <Divider/>
                 <Table removeWrapper hideHeader isCompact aria-label="Example static collection table" className="text-xs p-2">
                     <TableHeader>
                         <TableColumn>Type</TableColumn>

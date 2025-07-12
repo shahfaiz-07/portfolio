@@ -30,7 +30,7 @@ const socials = [
 export const UserTwitterCard = () => {
 
   return (
-    <Card className="max-w-[300px] border-none bg-background" shadow="none">
+    <Card className="max-w-[300px] border-none" shadow="none">
       <CardHeader className="justify-between space-x-2">
         <div className="flex gap-3">
           <Avatar
@@ -51,7 +51,7 @@ export const UserTwitterCard = () => {
           Full-stack developer 💻
         </p>
       </CardBody>
-      <Divider className="mt-2 bg-gray-600"/>
+      <Divider className="mt-2"/>
       <CardFooter className="gap-3">
         {
             socials.map((items, index) => (<Link key={index} href={items.link} className="text-white" isExternal>
@@ -65,11 +65,11 @@ export const UserTwitterCard = () => {
 
 export default function App() {
   return (
-    <Popover placement="bottom" backdrop="blur" className="bg-background">
+    <Popover placement="bottom" backdrop="blur">
       <PopoverTrigger>
         <Avatar isBordered color="primary" src="https://avatars.githubusercontent.com/u/111171229?v=4" />
       </PopoverTrigger>
-      <PopoverContent className="p-1 bg-transparent">
+      <PopoverContent className="p-1">
         <UserTwitterCard />
       </PopoverContent>
     </Popover>

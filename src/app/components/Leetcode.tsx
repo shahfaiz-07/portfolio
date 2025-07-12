@@ -59,7 +59,7 @@ export default function Leetcode() {
     fetchStats()
   }, [])
   return (
-    <Card className="max-w-[400px] text-foreground bg-background border border-warning" isPressable onPress={() => window.open("https://leetcode.com/u/shahfaiz", "_blank")}>
+    <Card className="max-w-[400px] text-foreground" isPressable onPress={() => window.open("https://leetcode.com/u/shahfaiz", "_blank")}>
       <CardHeader className="flex gap-3 justify-between">
         <div className="flex gap-5">
           <Avatar
@@ -82,7 +82,7 @@ export default function Leetcode() {
           width={40}
         />
       </CardHeader>
-      <Divider className="bg-warning"/>
+      <Divider/>
       <CardBody>
         {
           loading
@@ -90,23 +90,23 @@ export default function Leetcode() {
             (<Spinner variant="gradient" color="warning" className="my-10"/>)
             :
             (
-              <div className="flex flex-row font-mono">
+              <div className="flex flex-row items-center font-mono">
                 <CircularProgress
                   color="primary"
                   formatOptions={{ style: "percent" }}
                   showValueLabel={true}
                   // size="lg"
                   classNames={{
-                    svg: "h-36 w-36"
+                    svg: "h-26 w-26 md:h-36 md:w-36"
                   }}
                   value={stat.totalSolved}
                   valueLabel={<div>
-                    <h3 className="text-white text-lg font-semibold">{stat.totalSolved}<span className="text-xs">/{stat.totalQuestions}</span></h3>
+                    <h3 className="text-white text-xs md:text-lg font-semibold">{stat.totalSolved}<span className="text-[8px] md:text-xs">/{stat.totalQuestions}</span></h3>
                     <div className="flex gap-x-1 items-center justify-center"><FaCheck className="text-success" /> Solved</div>
                   </div>}
                   maxValue={stat.totalQuestions}
                 />
-                <div className="flex justify-between">
+                <div className="flex items-center justify-between">
                   <CircularProgress
                     color="success"
                     // formatOptions={{ style: "unit" }}
@@ -114,10 +114,10 @@ export default function Leetcode() {
                     showValueLabel={true}
                     // size="lg"
                     classNames={{
-                      svg: "h-18 w-18"
+                      svg: "h-14 w-14 md:h-18 md:w-18"
                     }}
                     value={stat.easySolved}
-                    valueLabel={<span className="text-success text-xs font-semibold">Easy</span>}
+                    valueLabel={<span className="text-success text-[8px] md:text-xs font-semibold">Easy</span>}
                     maxValue={stat.totalEasy}
                   />
                   <CircularProgress
@@ -127,10 +127,10 @@ export default function Leetcode() {
                     showValueLabel={true}
                     // size="lg"
                     classNames={{
-                      svg: "h-18 w-18"
+                      svg: "h-14 w-14 md:h-18 md:w-18"
                     }}
                     value={stat.mediumSolved}
-                    valueLabel={<span className="text-warning text-xs font-semibold">Medium</span>}
+                    valueLabel={<span className="text-warning text-[8px] md:text-xs font-semibold">Medium</span>}
                     maxValue={stat.totalMedium}
                   />
                   <CircularProgress
@@ -140,10 +140,10 @@ export default function Leetcode() {
                     showValueLabel={true}
                     // size="lg"
                     classNames={{
-                      svg: "h-18 w-18"
+                      svg: "h-14 w-14 md:h-18 md:w-18"
                     }}
                     value={stat.hardSolved}
-                    valueLabel={<span className="text-danger text-xs font-semibold">Hard</span>}
+                    valueLabel={<span className="text-danger text-[8px] md:text-xs font-semibold">Hard</span>}
                     maxValue={stat.totalHard}
                   />
                 </div>
