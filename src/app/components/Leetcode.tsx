@@ -1,5 +1,5 @@
 "use client"
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Avatar, addToast, CircularProgress, Spinner } from "@heroui/react";
+import { Card, CardHeader, CardBody, Divider, Image, Avatar, addToast, CircularProgress, Spinner } from "@heroui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { FaCheck } from "react-icons/fa";

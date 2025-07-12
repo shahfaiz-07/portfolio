@@ -2,22 +2,12 @@
 import Image from "next/image";
 import image from '../../public/hero-bg.png'
 import Typer from "./components/Typer";
-import { Avatar, Button, Link } from "@heroui/react";
+import { Button, Link } from "@heroui/react";
 import { RiFileDownloadLine } from "react-icons/ri";
-import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiGeeksforgeeks, SiGmail, SiLeetcode } from "react-icons/si";
+import { FaArrowRight } from "react-icons/fa";
 import MyNumber from "./components/MyNumber";
 import self from "../../public/image.png"
-
-export const socials = [
-  { icon: <FaGithub />, link: "https://www.github.com/shahfaiz-07" },
-  { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/s-faizaan-hussain-70b840248" },
-  { icon: <FaXTwitter />, link: "https://x.com/shahfaiz_96" },
-  { icon: <SiGmail />, link: "mailto:hussainfaizaan.s2004@gmail.com" },
-  { icon: <SiLeetcode />, link: "https://leetcode.com/u/shahfaiz/" },
-  { icon: <SiGeeksforgeeks />, link: "https://www.geeksforgeeks.org/user/hussainfa5a3w/" },
-]
+import { socials } from "@/constants";
 
 const stats = [
   { number: 10, message1: "Projects", message2: "Completed" },
@@ -47,10 +37,15 @@ export default function Home() {
               </Button>
               <div className="flex gap-x-2 md:gap-x-4">
                 {
-                  socials.map((item, index) => <Link key={index} isExternal href={item.link}>
+                  socials.map((item, index) => {
+                    const Icon = item.icon;
+                    return (
+                      <Link key={index} isExternal href={item.link}>
                     <Button isIconOnly className="aspect-square rounded-full text-xl" variant="ghost" color="primary">
-                      {item.icon}
-                    </Button></Link>)
+                      <Icon/>
+                    </Button></Link>
+                    )
+                  })
                 }
               </div>
             </div>

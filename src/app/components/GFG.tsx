@@ -1,9 +1,7 @@
 "use client"
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Avatar, addToast, Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Spinner } from "@heroui/react";
+import { Card, CardHeader, CardBody, Divider, Image, Avatar, addToast, Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Spinner } from "@heroui/react";
 import axios from "axios";
-import { Stats } from "fs";
 import { useEffect, useState } from "react";
-import { FaCheck } from "react-icons/fa";
 
 interface GFGStat {
     userHandle: string

@@ -1,11 +1,10 @@
 "use client"
 import React from 'react'
 import { AcmeLogo } from './Navbar'
-import { IoMdMail } from 'react-icons/io'
 import { SiGmail } from 'react-icons/si'
 import { FaPhone } from 'react-icons/fa'
-import { socials } from '../page'
 import { Button, Link } from '@heroui/react'
+import { socials } from '@/constants'
 
 
 const Footer = () => {
@@ -21,10 +20,15 @@ const Footer = () => {
       </div>
       <div className="flex gap-x-2 md:gap-x-4">
         {
-          socials.map((item, index) => <Link key={index} isExternal href={item.link}>
-            <Button isIconOnly className="aspect-square rounded-full text-xl" variant="light" color="primary" size='sm'>
-              {item.icon}
-            </Button></Link>)
+          socials.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <Link key={index} isExternal href={item.link}>
+                <Button isIconOnly className="aspect-square rounded-full text-xl" variant="light" color="primary" size='sm'>
+                  <Icon />
+                </Button></Link>
+            )
+          })
         }
       </div>
     </div>
