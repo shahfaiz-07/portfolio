@@ -21,7 +21,7 @@ const socials = [
     { icon: <FaGithub/>, link:"https://github.com/shahfaiz-07" },
     { icon: <FaLinkedin/>, link:"https://www.linkedin.com/in/s-faizaan-hussain-70b840248" },
     { icon: <FaXTwitter/>, link:"https://x.com/shahfaiz_96" },
-    { icon: <SiGmail/>, link:"mailto:hussainfaizaan.s2004@gmail.com" },
+    { icon: <SiGmail/>, link:"mailto:hussainfaizaan07@gmail.com" },
     { icon: <SiLeetcode/>, link:"https://leetcode.com/u/shahfaiz/" },
     { icon: <SiGeeksforgeeks />, link: "https://www.geeksforgeeks.org/user/hussainfa5a3w/"
 }
