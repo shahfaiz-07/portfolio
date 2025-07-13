@@ -18,7 +18,7 @@ import { SiGeeksforgeeks, SiGmail, SiLeetcode } from "react-icons/si";
 
 const socials = [
     { icon: <FaInstagram/>, link:"https://www.instagram.com/_.shahfaiz_96?igsh=bTloMTNybWk5NG01" },
-    { icon: <FaGithub/>, link:"https://www.instagram.com/_.shahfaiz_96?igsh=bTloMTNybWk5NG01" },
+    { icon: <FaGithub/>, link:"https://github.com/shahfaiz-07" },
     { icon: <FaLinkedin/>, link:"https://www.linkedin.com/in/s-faizaan-hussain-70b840248" },
     { icon: <FaXTwitter/>, link:"https://x.com/shahfaiz_96" },
     { icon: <SiGmail/>, link:"mailto:hussainfaizaan.s2004@gmail.com" },
