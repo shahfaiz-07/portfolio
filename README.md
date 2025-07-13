@@ -37,8 +37,7 @@ A sleek and modern portfolio website built using **Next.js**, **Tailwind CSS**, 
 
 ## 🌍 Deployment
 
-This portfolio will be deployed on **Vercel**.  
-🔗 _Deployment link will be added soon._
+This portfolio is deployed on [Vercel](https://portfolio-nine-cyan-awvxdg979r.vercel.app/).
 
 ## 🧑‍💻 Author
 
