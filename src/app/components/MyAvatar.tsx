@@ -23,7 +23,7 @@ const socials = [
     { icon: <FaXTwitter/>, link:"https://x.com/shahfaiz_96" },
     { icon: <SiGmail/>, link:"mailto:hussainfaizaan07@gmail.com" },
     { icon: <SiLeetcode/>, link:"https://leetcode.com/u/shahfaiz/" },
-    { icon: <SiGeeksforgeeks />, link: "https://www.geeksforgeeks.org/user/hussainfa5a3w/"
+    { icon: <SiGeeksforgeeks />, link: "https://www.geeksforgeeks.org/user/shahfaiz/"
 }
 ]
 
