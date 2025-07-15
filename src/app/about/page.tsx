@@ -1,5 +1,5 @@
 "use client"
-import { Tabs, Tab, Card, CardHeader, Divider, CardBody, CardFooter, Link } from "@heroui/react";
+import { Tabs, Tab, Card, CardHeader, Divider, CardBody, CardFooter } from "@heroui/react";
 import { MdSchool } from "react-icons/md";
 import { LuBrainCircuit } from "react-icons/lu";
 import { FaCode, FaGithub, FaHandshake } from "react-icons/fa";
@@ -7,10 +7,9 @@ import { CgProfile } from "react-icons/cg";
 import Leetcode from "../components/Leetcode";
 import GFG from "../components/GFG";
 import Github from "../components/Github";
-import { TbCodeCircle2 } from "react-icons/tb";
 import Skills from "../components/Skills";
 
-function EduCard({ h1, h2, body }: { h1: string, h2: string, body: string }) {
+function EduCard({ h1, h2, body, footer }: { h1: string, h2: string, body: string, footer: string }) {
   return (
     <Card className="max-w-sm border-none">
       <CardHeader className="">
@@ -23,6 +22,10 @@ function EduCard({ h1, h2, body }: { h1: string, h2: string, body: string }) {
       <CardBody>
         <p>{body}</p>
       </CardBody>
+      <Divider/>
+      <CardFooter>
+        <p className="text-sm font-bold">{footer}</p>
+      </CardFooter>
     </Card>
   )
 }
@@ -33,17 +36,20 @@ const educationDetails = [
   {
     h1: "Class 10th (ICSE)",
     h2: "2020",
-    body: "Kerala Samajam Model School, Jamshedpur, Jharkhand"
+    body: "Kerala Samajam Model School, Jamshedpur, Jharkhand",
+    footer: "97.5%"
   },
   {
     h1: "Class 12th (ISC)",
     h2: "2022",
-    body: "Kerala Samajam Model School, Jamshedpur, Jharkhand"
+    body: "Kerala Samajam Model School, Jamshedpur, Jharkhand",
+    footer: "95.75%"
   },
   {
     h1: "B. Tech - Information Technology",
     h2: "2022-present",
-    body: "Vellore Institute of Technology, Vellore, Tamil Nadu"
+    body: "Vellore Institute of Technology, Vellore, Tamil Nadu",
+    footer: "CGPA - 9.26"
   },
 ]
 
