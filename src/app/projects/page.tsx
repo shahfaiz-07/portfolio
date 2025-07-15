@@ -7,6 +7,7 @@ import streamly from "../../../public/streamly.png"
 import visualizer from "../../../public/visualizer.png"
 import colorcombo from "../../../public/colorcombo.png"
 import dsa from "../../../public/dsa.png"
+import archives from "../../../public/archives.png"
 import weather from "../../../public/weatherme.png"
 import portfolio from "../../../public/portfolio.png"
 import React, { useState } from 'react'
@@ -80,7 +81,15 @@ const projects: Array<DisplayProps> = [
   },
   {
     no: 9,
-    title: "DSA Archives",
+    title: "DSA Archives Website",
+    image: archives,
+    overview: "A developer-friendly web app to browse and search through my personal solutions to problems from platforms like LeetCode, GeeksforGeeks, and others. Solutions are organized by topic, platform, and difficulty — all accessible through an intuitive UI built with Next.js, Tailwind CSS, HeroUI, and TypeScript.",
+    url: "https://github.com/shahfaiz-07/dsa-archives",
+    techStack: ["next", "tailwind", "ts", "heroui", "github"]
+  },
+  {
+    no: 10,
+    title: "DSA Archives Repo",
     image: dsa,
     overview: "This GitHub repository serves as a structured collection of my solutions to Data Structures and Algorithms (DSA) problems from platforms like LeetCode, GeeksforGeeks, and Coding Ninjas. It's organized by topic (e.g., Arrays, Trees, Graphs), and each topic is further divided by platform and difficulty level (Easy, Medium, Hard). Every problem folder includes both C++ and Java solutions, with the original problem link provided at the top of each file. The goal is to showcase consistency, platform-agnostic problem solving, and language versatility.",
     url: "https://github.com/shahfaiz-07/dsa_archives",

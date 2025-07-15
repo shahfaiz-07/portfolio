@@ -1,7 +1,7 @@
 import { Divider, Link, Tooltip } from '@heroui/react';
 import Image, { StaticImageData } from 'next/image';
 import React from 'react'
-import { FaAws, FaBootstrap, FaCss3, FaDocker, FaGitAlt, FaHtml5, FaJava, FaJs, FaNode, FaPython, FaReact } from 'react-icons/fa';
+import { FaAws, FaBootstrap, FaCss3, FaDocker, FaGitAlt, FaGithub, FaHtml5, FaJava, FaJs, FaNode, FaPython, FaReact } from 'react-icons/fa';
 import { GoWorkflow } from 'react-icons/go';
 import { RiGeminiLine, RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri';
 import { SiChartdotjs, SiDaisyui, SiExpress, SiFastapi, SiJquery, SiMongodb, SiNextui, SiPandas, SiRazorpay, SiRedux, SiScikitlearn, SiShadcnui, SiTensorflow, SiTypescript, SiVite, SiZod } from 'react-icons/si';
@@ -61,12 +61,13 @@ export const iconMap = {
     jquery: <SiJquery />,
     aws: <FaAws />,
     git: <FaGitAlt />,
+    github: <FaGithub/>
 }
 
 const DisplayProject = ({ no, title, image, url, url2, overview, techStack }: DisplayProps) => {
     return (
         <div className='my-5'>
-            <h1 className='text-2xl md:text-4xl font-bold'>0{no} | {title}</h1>
+            <h1 className='text-2xl md:text-4xl font-bold'>{no<10 && "0"}{no} | {title}</h1>
             <Divider className='my-2' />
             <div className='flex flex-col lg:flex-row gap-3 items-center'>
                 <Image alt="project image" src={image} className='lg:w-2/3' />
